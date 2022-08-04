@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  /* background: darkslategrey; */
+}
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 20px;
+    width: 20rem;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #9b9b9b;
+    outline: 0;
+    font-size: 1rem;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    border-width: 1px;
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: .8rem;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+ 
+  .login-container{
+    display: flex;
+    flex-direction: row;
+    min-height:100vh;
+  }
+  .login-container .login-container-image{
+    flex:1;
+    display: grid;
+    place-items: center;
+  }
+  .login-container .login-container-form{
+    flex:1;
+    display: grid;
+    place-items: center;
+  }
+  .login-container .login-container-form form{
+    border: 1px solid #9b9b9b;
+    border-radius:10px;
+    background-color: #fff;
+    width:25rem;
+    height:35rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .login-container .login-container-form form p{
+    margin-top:3rem;
+  }
+  .login-container .login-container-form form p a{
+    text-decoration: none;
+    color: rgb(30, 118, 243);
+    font-weight:bold;
+    cursor: pointer;
+    margin-left:.3rem;
+  }
+  .login-container .login-container-form .password-forgot a{
+    color: #000;
+    cursor: pointer;
+    font-weight:normal;
+    margin-top: 1rem;
+  }
+@media (max-width:900px) {
+  .login-container-image img{
+    display:none;
+  }
+  
+}

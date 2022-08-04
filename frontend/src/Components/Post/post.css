@@ -1,0 +1,146 @@
+.post{
+    width: 50%;
+    min-width:25rem;
+    margin: 4rem auto;
+    background: #fff;
+    border: 1.5px solid #adadfb;
+    border-radius: 10px;
+}
+.post .post-header{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.post .post-header img{
+    width: 60px;
+    height: 60px;
+    margin: .5rem 1rem;
+    font-weight: 400;
+    color: #adadfb;
+}
+.post .post-header .user-name{
+    font-size:1.4rem;
+    font-weight: bolder;
+    width: 10rem;
+    color: #000;
+    cursor: pointer;
+}
+.post .post-image{
+  width: 100%;
+  max-height: 70vh;
+
+  overflow: hidden;
+  display: grid;
+  background-color: #adadfb87;
+  place-items: center;
+}
+.post .post-image img{
+    max-width: 100%;
+    min-height: 40vh;
+    
+}
+.post .post-caption{
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+}
+.post .user-name{
+    font-weight: bolder;
+    margin: 0 .2rem;
+    min-width:5rem;
+    color:#000;
+}
+.post .post-reaction{
+ display: flex;
+ flex-direction: column;
+}
+.post .post-reaction .icons{
+    display: flex;
+    flex-direction: row;
+}
+.post .post-reaction .icons .reaction-icon{
+    font-size: 2.2rem;
+    font-weight: 10;
+    opacity: .9;
+    cursor: pointer;
+    margin: .8rem .4rem;
+}
+.reaction-icon-liked{
+    font-size: 2.2rem;
+    font-weight: 10;
+    opacity: .9;
+    cursor: pointer;
+    margin: .8rem .4rem;
+    color:red;
+}
+.post .post-reaction .like-count{
+    font-weight: bolder;
+    margin: .2rem .5rem;
+    width:5rem;
+}
+.post .comments-count{
+    margin: .2rem .5rem;
+    font-weight: bolder;
+    opacity: .6;
+}
+.comment-body{
+    background:rgb(239, 239, 239);
+    padding: .2rem .5rem;
+    border-radius:10px;
+    margin: 1rem 0;
+    width: 95%;
+    height:100%;
+    overflow-y:auto;
+}
+.post-comment{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem .5rem; 
+    align-items: center;
+}
+.post-comment img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right: .5rem;
+}
+.post-comment .user-name{
+    font-weight: bold;
+    margin-right: .5rem;
+}
+.comment-box{
+    background-color:#fff;
+    width: 30%;
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin:4rem auto;
+    padding:1rem;
+}
+.comment-box .comment-bar{
+    display: flex;
+    flex-direction: row;
+}
+.comment-box .comment-bar input{
+    outline: none;
+    border:none;
+    background:rgb(239, 239, 239);
+    width:80%;
+    padding:.5rem;
+    border-radius: 10px 0 0 10px;
+    font-size: 1rem;
+}
+.comment-box .comment-bar .comment-send-icon{
+    background-color: aquamarine;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    font-size: 2rem;
+    padding:.6rem 1rem;
+    cursor: pointer;
+}
+.comment-box .comment-bar .comment-send-icon:hover{
+    background-color:rgb(80, 224, 176);
+}
+

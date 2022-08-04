@@ -1,0 +1,167 @@
+
+  
+  .tab-wrap {
+    width: 40rem;
+    position: relative;
+    display: flex;
+   
+  }
+  
+  .tab-wrap  input[type=radio][name=tabs] {
+    position: absolute;
+    z-index: -1;
+  }
+  .tab-wrap input[type=radio][name=tabs]:checked + .tab-label-content label {
+    color: #adadfb;
+  }
+  .tab-wrap  input[type=radio][name=tabs]:checked + .tab-label-content .tab-content {
+    display: block;
+  }
+  .tab-wrap  input[type=radio][name=tabs]:nth-of-type(1):checked ~ .slide {
+    left: calc((40rem / 3) * 0);
+  }
+  .tab-wrap  input[type=radio][name=tabs]:nth-of-type(2):checked ~ .slide {
+    left: calc((40rem / 3) * 1);
+  }
+  .tab-wrap  input[type=radio][name=tabs]:nth-of-type(3):checked ~ .slide {
+    left: calc((40rem / 3) * 2);
+  }
+
+  .tab-wrap  input[type=radio][name=tabs]:first-of-type:checked ~ .slide {
+    left: 0;
+  }
+  
+  .tab-wrap  label {
+    cursor: pointer;
+    color: #adadfbc7;
+    font-size: 1.2rem;
+    background-color: #E6E6FA;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 56px;
+    transition: color 0.2s ease;
+    width: 100%;
+  }
+  
+  .slide {
+    background: #adadfb;
+    width: calc(40rem / 3);
+    height: 4px;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 4px);
+    transition: left 0.3s ease-out;
+  }
+  
+  .tab-label-content {
+    width: 100%;
+  }
+  .tab-label-content .tab-content {
+    position: absolute;
+    left: 0px;
+    border-radius: 10px;
+    min-height:60vh;
+    display: none;
+    background: #fff;
+    width:40rem;
+  }
+  .userlist{
+    display: flex;
+    font-display: column;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+}
+.userlist .user-list-header{
+    width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   padding: 0 1rem;
+}
+.userlist .user-list-header .user-details-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.userlist .user-list-header .image{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.userlist .user-list-header .image img{
+    width:70px;
+    height:70px;
+}
+.userlist .user-list-header .user-name{
+    font-size:1.3rem;
+    font-weight:100;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.userlist .user-list-header .follow-btn{
+    padding:.5rem .8rem;
+  margin: 1rem 0;
+  background:white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  border: 1px solid #adadfb;
+  color: #adadfb;
+  width:6rem;
+}
+  
+  @media screen and (max-width: 800px) {
+    .tab-label-content .tab-content {
+        width:25rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slide {
+        width: calc(25rem / 3);
+    }
+    .tab-wrap  input[type=radio][name=tabs]:checked + .tab-label-content .tab-content {
+        display: block;
+      }
+      .tab-wrap  input[type=radio][name=tabs]:nth-of-type(1):checked ~ .slide {
+        left: calc((25rem / 3) * 0);
+      }
+      .tab-wrap   input[type=radio][name=tabs]:nth-of-type(2):checked ~ .slide {
+        left: calc((25rem / 3) * 1);
+      }
+      .tab-wrap   input[type=radio][name=tabs]:nth-of-type(3):checked ~ .slide {
+        left: calc((25rem / 3) * 2);
+      }
+      .tab-wrap {
+        width:25rem;
+      }
+    
+  }
+  @media (max-width:900px){
+    .userlist .user-list-header .image{
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .userlist .user-list-header .image img{
+        width:40px;
+        height:40px;
+    }
+    .userlist .user-list-header .user-name{
+        font-size: 1rem;
+    }
+    .userlist .user-list-header .follow-btn{
+        padding:.2rem .4rem;
+        font-size: .8rem;
+
+    }
+}
+

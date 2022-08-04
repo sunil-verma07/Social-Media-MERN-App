@@ -1,0 +1,78 @@
+.navbar{
+  width:40rem;
+  display:grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-top:2rem;
+  border-radius: 3rem;
+  background-color: #fff;
+}
+.navbar .icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .icons a{
+  margin: 0rem 2rem;
+  color: #000;
+  cursor: pointer;
+}
+.navbar .icons .svg-icons:hover{
+  color: #adadfb;
+}
+.navbar .icons .svg-icons{
+  font-size: 3rem;
+  color:#E6E6FA;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .icons .svg-add{
+  font-size:3rem;
+  transform:translateY(50px);
+  border-radius:50%;
+  background-color: #adadfb;
+  color: rgb(255, 255, 255);
+  padding: .8rem;
+  border:10px solid #E6E6FA;
+}
+.navbar .icons .svg-add:hover{
+  color: white;  
+}
+.navbar .icons .active .svg-icons{
+  color:#adadfb ;
+}
+.navbar .icons .active .svg-add{
+  color: white
+}
+.navbar .icons img{
+  width: 3rem;
+  height: 3rem;
+  border-radius:50%;
+  background-size: cover;
+}
+.edit-password{
+  width: 20%;
+  min-width: 20rem;
+  height:max-content;
+  padding:1rem;
+  background-color: #fff;
+  margin: 10rem auto;
+  
+}
+
+@media (max-width:900px){
+  .navbar .icons .svg-icons{
+    font-size:2rem;
+  }
+  .navbar{
+    width:25rem;
+  }
+  .navbar .icons a{
+    margin:0rem 1rem;
+  }
+  .navbar .icons img{
+    width: 2rem;
+    height: 2rem;
+    border-radius:50%;
+    background-size: cover;
+  }
+}

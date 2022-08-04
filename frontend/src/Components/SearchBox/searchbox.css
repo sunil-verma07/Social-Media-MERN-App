@@ -1,0 +1,120 @@
+.search-list{
+   width: 40%;
+   height: 80%;
+   overflow: hidden;
+   min-width: 20rem;
+   background:#fff;
+   margin: 2rem auto; 
+   padding:1rem 0;
+   overflow-y: scroll;
+}
+.search-list .search-input-bar{
+    padding: .3rem;
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.856);
+}
+.search-list .search-input-bar input{
+    width: 100%;
+    margin-left: 1rem;
+    font-size:1rem;
+    outline:none;
+    border: none;
+}
+.search-list .search-input-bar .search-icon-svg{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.77);
+    cursor: pointer;
+}
+.search-list .search-input-bar .search-icon-svg:hover{
+    font-size: 2rem;
+    color: rgba(0, 0, 0);
+    cursor: pointer;
+}
+.search-userlist{
+    display: flex;
+    flex-direction: column;
+    padding:.5rem;
+    width: 100%;
+
+    background-color:#fff;
+}
+.search-userlist .search-list-header{
+    width:90%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   padding: 1rem;
+}
+.search-userlist .search-list-header .search-details-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.search-userlist .search-list-header .image{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.search-userlist .search-list-header .image img{
+    width:70px;
+    height:70px;
+}
+.search-userlist .search-list-header .user-name{
+    font-size:1.3rem;
+    font-weight:100;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.search-userlist .search-list-header .follow-btn{
+   padding:.5rem .8rem;
+  margin: 1rem 0;
+  background:white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  border: 1px solid #adadfb;
+  color: #adadfb;
+  width:6rem;
+}
+.no-users-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 60%;
+}
+.no-users-search .no-users-search-icon{
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.659);
+}
+@media (max-width:900px){
+    .search-userlist .search-list-header .image{
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .search-userlist .search-list-header .image img{
+        width:40px;
+        height:40px;
+    }
+    .search-userlist .search-list-header .user-name{
+        font-size: 1rem;
+    }
+    .search-userlist .search-list-header .follow-btn{
+        padding:.2rem .4rem;
+        font-size: .8rem;
+
+    }
+}

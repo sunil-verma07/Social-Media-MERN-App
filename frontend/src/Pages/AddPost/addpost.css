@@ -1,0 +1,80 @@
+.addpost{
+  max-width: 50%;
+  margin: 4rem auto;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #adadfb;
+  min-width: 25rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.addpost .add-image-section{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #adadfb ;
+    justify-content: center;
+    overflow: hidden;
+}
+.addpost .add-image-section img{
+    height: 100%;
+
+}
+.addpost .add-image-section .upload-image-icon{
+    font-size:4rem;
+    color:#adadfb ;
+}
+.addpost .add-image-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #adadfb;
+}
+
+.addpost .add-image-details .add-image-details-user-info{
+    display: flex;
+    flex-direction: row;
+
+}
+.addpost .add-image-details .add-image-details-user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    .addpost .add-image-details .add-image-details-user-info img{
+        width: 60px;
+        height: 60px;
+        margin: .5rem 1rem;
+        font-weight: 400;
+        color: #adadfb;
+    }
+    .addpost .add-image-details .add-image-details-user-info .user-name{
+        font-size:1.4rem;
+        font-weight: bolder;
+        width: 10rem;
+    
+    }
+.addpost .add-image-details textarea{
+ resize: none !important;
+ width: 90%;
+ outline: none !important;
+ border: none !important;
+ scrollbar-width: 0px;
+ height: 80%;
+ padding: 0 1rem;
+}
+.addpost .add-image-details .upload-btn{
+    display:grid;
+    place-items: center;
+    padding:1rem 0;
+   background-color:#adadfb;
+   color:#fff;
+   cursor: pointer;
+}
+.addpost .add-image-details .upload-btn:hover{
+    background-color:#6b6bfb;
+
+}
